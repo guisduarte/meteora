@@ -1,0 +1,103 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--preto);
+    height: 58px;
+}
+
+.container-links {    
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-left: 23px;    
+}
+
+
+.logo {
+    background-image: url(../Assets/Desktop/Logo-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 133px;
+    height: 32px;    
+}
+
+.lista{
+    display: flex;
+    gap: 40px;
+    
+}
+
+.lista-links a {    
+    color: var(--branco);
+    text-decoration: none;
+}
+
+.container-buscar {
+    display: flex;
+    gap: 16px;
+    margin-right: 23px;    
+}
+
+.buscar-texto {
+    width: 170px;
+    height: 38px;
+}
+
+.buscar-texto::placeholder {   
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+.buscar-btn {
+    font-weight: 500;
+    background-color: transparent;
+    color: var(--branco);
+    border: 1px solid var(--branco);
+    padding: 9px 12px;    
+}
+
+
+/* Tela para Tablet */
+@media (max-width: 768px) {
+    .logo {
+        background-image: url(../Assets/Tablet/Logo-tablet.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100px;
+        height: 24px;
+    }
+    .container-links {        
+        gap: 20px;   
+    }
+
+    .lista {
+        gap: 20px;
+        font-size: 13px;
+    }
+
+    .buscar-texto {
+        width: 145px;
+    }
+
+    .buscar-texto::placeholder, .buscar-btn {   
+        font-size: 13px;
+    }
+
+}
+
+/* Tela Mobile */
+
+@media (max-width: 375px) {
+    .logo {
+        background-image: url(../Assets/Mobile/Logo-mobile.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 126px;
+        height: 18px;
+    }
+
+    .lista {
+        margin-left: 12px;
+    }
+}

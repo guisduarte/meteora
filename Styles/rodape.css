@@ -1,0 +1,25 @@
+footer {
+    background-color: var(--preto);
+    color: var(--branco);
+    height: 54px;
+    
+}
+
+footer h2 {
+    text-align: center;
+    padding: 17px 0;
+    font-size: 13px;
+}
+
+@media (max-width: 375px) {
+    footer {
+        height: 74px;
+    }
+
+    footer h2 {
+        width: 246px;
+        padding: 17px 0px;
+        margin: 0 64px;
+        line-height: 20px;
+    }
+}

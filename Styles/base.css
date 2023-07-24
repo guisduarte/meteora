@@ -1,0 +1,28 @@
+html, main, body, input, button, dialog{
+    font-family: var(--fonte-inter);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@keyframes slideDownMenu {
+    from {
+      opacity: 0;
+      max-height: 0;
+    }
+    to {
+      max-height: 200px;
+      opacity: 1;
+    }
+}
+
+@keyframes slideModal {
+  from {
+     opacity: 0;
+    transform: translateY(-100%);
+  
+  }
+  to {
+    transform: translateY(-50%);
+    opacity: 1; 
+  }
+}

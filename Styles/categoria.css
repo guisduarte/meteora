@@ -1,0 +1,153 @@
+
+.categoria h2 {
+    text-align: center;
+    margin-top: 72px; 
+    font-size: 32px; 
+    font-weight: 500;
+}
+.container-categoria {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 32px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 160px;
+    height: 192px;
+    cursor: pointer;
+}
+
+.cards-footer {
+    width: 160px;
+    height: 35px;
+    padding: 8px 16px;
+    text-align: center;
+    font-weight: 500;
+    border: none;
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+.camisetas {
+    background-image: url(../Assets/Desktop/Categorias/Categoria\ camiseta.png);
+}
+.bolsas {
+    background-image: url(../Assets/Desktop/Categorias/Categoria\ Bolsa.png);
+}
+.calçados {
+    background-image: url(../Assets/Desktop/Categorias/Categoria\ Calçados.png);
+}
+.calças {
+    background-image: url(../Assets/Desktop/Categorias/Categoria\ calça.png);
+}
+.casacos {
+    background-image: url(../Assets/Desktop/Categorias/Categoria\ casacos.png);
+}
+.oculos {
+    background-image: url(../Assets/Desktop/Categorias/Categoria\ óculos.png);
+}
+
+@media (max-width: 768px) {
+    .categoria h2 {
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 32px;
+        font-size: 28px; 
+    }
+
+    .container-categoria {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 39px;
+    }
+    
+    .cards {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 209px;
+        height: 192px;
+    }
+    
+    .cards-footer {
+        width: 209px;        
+    }
+
+    .camisetas {
+        background-image: url(../Assets/Tablet/Categorias/Categoria\ camiseta.png);
+        background-repeat: no-repeat;
+    }
+    .bolsas {
+        background-image: url(../Assets/Tablet/Categorias/Categoria\ Bolsas.png);
+        background-repeat: no-repeat;
+    }
+    .calçados {
+        background-image: url(../Assets/Tablet/Categorias/Categoria\ calçados.png);
+        background-repeat: no-repeat;
+    }
+    .calças {
+        background-image: url(../Assets/Tablet/Categorias/Categoria\ calças.png);
+        background-repeat: no-repeat;
+    }
+    .casacos {
+        background-image: url(../Assets/Tablet/Categorias/Categoria\ casacos.png);
+        background-repeat: no-repeat;
+    }
+    .oculos {
+        background-image: url(../Assets/Tablet/Categorias/Categoria\ óculos.png);
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 375px) {
+    .categoria h2 {
+        text-align: center;
+        margin: 24px 0;
+    }
+
+    .container-categoria {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-left: 26.5px;
+        margin-right: 25.5px;
+    }
+    
+    .cards {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 146px;
+    }
+    
+    .cards-footer {
+        width: 146px;
+    }
+
+    .camisetas {
+        background-image: url(../Assets/Mobile/Categorias/Categoria\ camiseta.png);
+        background-repeat: no-repeat;
+    }
+    .bolsas {
+        background-image: url(../Assets/Mobile/Categorias/Categoria\ Bolsas.png);
+        background-repeat: no-repeat;
+    }
+    .calçados {
+        background-image: url(../Assets/Mobile/Categorias/Categoria\ calçados.png);
+        background-repeat: no-repeat;
+    }
+    .calças {
+        background-image: url(../Assets/Mobile/Categorias/Categoria\ calças.png);
+        background-repeat: no-repeat;
+    }
+    .casacos {
+        background-image: url(../Assets/Mobile/Categorias/Categoria\ Casacos.png);
+        background-repeat: no-repeat;
+    }
+    .oculos {
+        background-image: url(../Assets/Mobile/Categorias/Categoria\ óculos.png);
+        background-repeat: no-repeat;
+    }
+}

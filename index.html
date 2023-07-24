@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="Styles/reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.className += ' js';</script>
+    <title>Meteora</title>
+</head>
+<body>
+  <header>
+        <div class="container-links">
+            <div class="container-logo-menu">
+                <div class="logo"></div>
+                
+                <button data-menu="button" aria-expanded="false" aria-controls="menu" >
+                    <span class="linha"></span>
+                    <span class="linha"></span>
+                    <span class="linha"></span>
+                </button>
+            </div>
+
+            <nav class="menu">
+                <ul class="lista" data-menu="list">
+                    <li class="lista-links">
+                        <a href="#">Home</a>
+                    </li>
+
+                    <li class="lista-links">
+                        <a href="#">Nossas Lojas</a>
+                    </li>
+                    
+                    <li class="lista-links">
+                        <a href="#">Novidades</a>
+                    </li>
+
+                    <li class="lista-links">
+                        <a href="#">Promoções</a>
+                    </li>
+                </ul>                
+            </nav>          
+        </div>
+
+        <form class="container-buscar" data-menu="container-buscar">
+            <input type="search" class="buscar-texto" placeholder="Digite o produto" data-menu="buscar-texto" >
+            <input type="button" value="Buscar" class="buscar-btn" data-menu="buscar-btn" id="buscar-btn" >
+        </form>
+  </header>
+    <main>
+        <section class="banner">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <picture>
+                      <source media="(max-width: 375px)" srcset="Assets/Mobile/Banner-carousel-1_375.png">
+                        <source media="(max-width: 768px)" srcset="Assets/Tablet/Banner-carousel-1_768.png">                        
+                        <img src="Assets/Desktop/Banner-carousel-1_1440.png" class="d-block w-100" alt="imagem 1 do banner">
+                    </picture>                   
+                  </div>
+                  <div class="carousel-item">
+                    <picture>
+                      <source media="(max-width: 375px)" srcset="Assets/Mobile/Banner-carousel-2_375.png">
+                        <source media="(max-width: 768px)" srcset="Assets/Tablet/Banner-carousel-2_768.png">
+                        <img src="Assets/Desktop/Banner-carousel-2_1440.png" class="d-block w-100" alt="imagem 2 do banner">
+                    </picture>
+                    <div class="carousel-caption caption-img2">
+                      <h1>COLEÇÃO ATEMPORAL</h1>
+                      <p>Estilo e qualidade para durar. </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <picture>
+                      <source media="(max-width: 375px)" srcset="Assets/Mobile/Banner-carousel-3_375.png">
+                        <source media="(max-width: 768px)" srcset="Assets/Tablet/Banner-carousel-3_768.png">
+                        <img src="Assets/Desktop/Banner-carousel-3_1440.png" class="d-block w-100" alt="imagem 3 do banner">
+                    </picture>
+                    <div class="carousel-caption caption-img3">
+                      <h1>COLEÇÃO ATEMPORAL</h1>
+                      <p>Alto impacto visual, baixo impacto ambiental!</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true">
+                    <img src="Assets/voltar.png" class="voltar" alt="botão voltar">
+                  </span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true">
+                    <img src="Assets/avançar.png" alt="botão avançar">
+                  </span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+
+        <section class="categoria">
+          <h2>Busque por categoria:</h2>
+          <section class="container-categoria">
+            <div class="cards camisetas" id="botaoCamisetas">
+              <span class="cards-footer">Camisetas</span>
+            </div>
+
+            <div class="cards bolsas"  id="botaoBolsas">
+              <span class="cards-footer">Bolsas</span>
+            </div>
+
+            <div class="cards calçados"  id="botaoCalçados">
+              <span class="cards-footer">Calçados</span>
+            </div>
+
+            <div class="cards calças"  id="botaoCalças">
+              <span class="cards-footer">Calças</span>
+            </div>
+
+            <div class="cards casacos"  id="botaoCasacos">
+              <span class="cards-footer">Casacos</span>
+            </div>
+
+            <div class="cards oculos"  id="botaoOculos">
+              <span class="cards-footer">Óculos</span>
+            </div>
+
+          </section>
+
+        </section>
+
+        <section class="produtos" data-lista="produtos">
+          <h2>Produtos que estão bombando!</h2>
+          <section class="container-produtos">
+            
+          </section>
+          
+        </section>
+
+        <section class="facilidades">
+          <h2>Conheça todas as nossas facilidades</h2>
+          <div class="container-facilidades">
+            <div class="facilidade-box">
+              <picture>
+                  <source media="(max-width: 375px)" srcset="Assets/Mobile/Ícones/x-diamond.png">
+                  <img src="Assets/Desktop/Ícones/x-diamond (2).png" alt="logo pague pelo pix">
+              </picture>
+              <div class="facilidade-box-texto">
+                <h3>PAGUE PELO PIX</h3>
+                <p id="fac-p">Ganhe 5% OFF em pagamentos via PIX</p>
+              </div>
+            </div>
+
+            <div class="facilidade-box">
+              <picture>
+                  <source media="(max-width: 375px)" srcset="Assets/Mobile/Ícones/arrow-repeat.png">
+                  <img src="Assets/Desktop/Ícones/arrow-repeat (2).png" alt="logo troca gratis">
+              </picture>
+              <div class="facilidade-box-texto">
+                <h3>TROCA GRÁTIS</h3>
+                <p>Fique livre para trocar em até 30 dias.</p>                
+              </div>
+            </div>
+
+            <div class="facilidade-box">
+              <picture>
+                  <source media="(max-width: 375px)" srcset="Assets/Mobile/Ícones/flower1.png">
+                  <img src="Assets/Desktop/Ícones/flower1 (3).png" alt="logo sustentabilidade">
+              </picture>
+              <div class="facilidade-box-texto">
+                <h3>SUSTENTABILIDADE</h3>
+                <p>Moda responsável, que respeita o meio ambiente.</p>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="news__letter">          
+          <div class="news__letter-box">
+            <h2>Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira compra? <span>Cadastre-se!</span></h2>
+            <input type="email" name="email" id="email" placeholder="Digite seu email" required ><button class="open-news">Enviar</button>
+            <span id="texto-erro"></span>
+          </div>
+        </section>
+
+    </main>
+    <footer>
+      <h2>2023 © Desenvolvido por Alura | Projeto fictício sem fins comerciais.</h2>
+    </footer>
+
+    <dialog id="modal-produtos">
+      <div class="modal__cabecalho">
+        <div class="modal__cabecalho-box" aria-label="Fechar modal">
+          <img src="Assets/Vector.png" alt="" width="32px" height="32px">
+          <h1>Confira detalhes sobre o produto</h1>
+        </div>
+        <span class="fechar-modal-btn close">
+          <img src="Assets/fechar-modal.png"  alt="botão fechar modal">
+        </span>
+      </div>
+
+      <!-- Camiseta conforto -->
+      <div class="modal__item">
+        <div class="modal__item-img">
+          <picture>
+            <source media="(max-width: 375px)" srcset="">
+            <source media="(max-width: 768px)" srcset="Assets/Tablet/Imagens-Cards/camiseta.png">
+            <img src="Assets/Desktop/Imagens-Cards/Camiseta.png" alt="imagem camiseta">
+          </picture>
+        </div>
+        <div class="modal__item-info">
+          <div class="modal__item-txt">
+            <h2>Camiseta conforto</h2>
+            <p>Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.</p>
+            <span class="modal__item-valor">R$ 70,00</span>
+            <span class="modal__item-loja">Vendido e entregue por Riachuelo</span>
+          </div>
+          
+          <div class="modal__item-cores">
+            <h2>Cores:</h2>
+            <div class="cores-box">
+              <div class="cores">
+                <input type="radio" name="cores" id="camiseta-azul">
+                <label for="camiseta-azul">Azul claro</label>
+              </div>
+              <div class="cores">
+                <input type="radio" name="cores" id="camiseta-branco">
+                <label for="camiseta-branco">Ofwhite</label>
+              </div>
+              <div class="cores">
+                <input type="radio" name="cores" id="camiseta-preto">
+                <label for="camiseta-preto">Preto</label>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="modal__item-tamanho">
+            <h2>Tamanho:</h2>
+            <div class="tamanhos-box">
+              <div class="tamanhos">
+                <input type="radio" name="tamanho" id="camiseta-p">
+                <label for="camiseta-p">P</label>
+              </div>
+              <div class="tamanhos">
+                <input type="radio" name="tamanho" id="camiseta-pp">
+                <label for="camiseta-pp">PP</label>
+              </div>
+              <div class="tamanhos">
+                <input type="radio" name="tamanho" id="camiseta-m">
+                <label for="camiseta-m">M</label>
+              </div>
+              <div class="tamanhos">
+                <input type="radio" name="tamanho" id="camiseta-g">
+                <label for="camiseta-g">G</label>
+              </div>
+              <div class="tamanhos">
+                <input type="radio" name="tamanho" id="camiseta-gg">
+                <label for="camiseta-gg">GG</label>
+              </div>
+            </div>
+          </div>
+          <button>Adicionar à sacola</button>
+        </div>
+
+      </div>
+
+      <!-- Calça Alfaiataria -->
+      <div class="modal__item">
+        <div class="modal__item-img">
+          <picture>
+            <source media="(max-width: 768px)" srcset="Assets/Tablet/Imagens-Cards/calça.png">
+            <img src="Assets/Desktop/Imagens-Cards/Calça.png" alt="imagem camiseta">
+          </picture>
+        </div>
+        <div class="modal__item-info">
+          <div class="modal__item-txt">
+            <h2>Calça Alfaiataria</h2>
+            <p>Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!</p>
+            <span class="modal__item-valor">R$ 180,00</span>
+            <span class="modal__item-loja">Vendido e entregue por Riachuelo</span>
+          </div>
+          
+          <div class="modal__item-cores">
+            <h2>Cores:</h2>
+            <div class="cores-box">
+              <div class="cores">
+                <input type="radio" name="cores" id="calça-azul">
+                <label for="calça-azul">Azul claro</label>
+              </div>
+              <div class="cores">
+                <input type="radio" name="cores" id="calça-branco">
+                <label for="calça-branco">Ofwhite</label>
+              </div>
+              <div class="cores">
+                <input type="radio" name="cores" id="calça-preto">
+                <label for="calça-preto">Preto</label>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="modal__item-tamanho">
+            <h2>Tamanho:</h2>
+            <div class="tamanhos-box">
+              <div class="tamanhos">
+                <input type="radio" name="tamanho" id="calça-p">
+                <label for="calça-p">P</label>
+              </div>
+              <div class="tamanhos">
+                <input type="radio" name="tamanho" id="calça-pp">
+                <label for="calça-pp">PP</label>
+              </div>
+              <div class="tamanhos">
+                <input type="radio" name="tamanho" id="calça-m">
+                <label for="calça-m">M</label>
+              </div>
+              <div class="tamanhos">
+                <input type="radio" name="tamanho" id="calça-g">
+                <label for="calça-g">G</label>
+              </div>
+              <div class="tamanhos">
+                <input type="radio" name="tamanho" id="calça-gg">
+                <label for="calça-gg">GG</label>
+              </div>
+            </div>
+          </div>
+          <button>Adicionar à sacola</button>
+        </div>
+
+      </div>
+
+      <!-- Tênis Chunky -->
+      <div class="modal__item">
+        <div class="modal__item-img">
+          <picture>
+            <source media="(max-width: 768px)" srcset="Assets/Tablet/Imagens-Cards/tenis.png">
+            <img src="Assets/Desktop/Imagens-Cards/Tenis.png" alt="imagem camiseta">
+          </picture>
+        </div>
+        <div class="modal__item-info">
+          <div class="modal__item-txt">
+            <h2>Tênis Chunky</h2>
+            <p>Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.</p>
+            <span class="modal__item-valor">R$ 250,00</span>
+            <span class="modal__item-loja">Vendido e entregue por Riachuelo</span>
+          </div>
+          
+          <div class="modal__item-cores">
+            <h2>Cores:</h2>
+            <div class="cores-box">
+              <div class="cores">
+                <input type="radio" name="cores" id="tenis-azul">
+                <label for="tenis-azul">Azul claro</label>
+              </div>
+              <div class="cores">
+                <input type="radio" name="cores" id="tenis-branco">
+                <label for="tenis-branco">Ofwhite</label>
+              </div>
+              <div class="cores">
+                <input type="radio" name="cores" id="tenis-preto">
+                <label for="tenis-preto">Preto</label>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="modal__item-tamanho">
+            <h2>Tamanho:</h2>
+            <div class="tamanhos-box">
+              <div class="tamanhos">
+                <input type="radio" name="tamanho" id="tenis-36">
+                <label for="tenis-36">36</label>
+              </div>
+              <div class="tamanhos">
+                <input type="radio" name="tamanho" id="tenis-38">
+                <label for="tenis-38">38</label>
+              </div>
+              <div class="tamanhos">
+                <input type="radio" name="tamanho" id="tenis-40">
+                <label for="tenis-40">40</label>
+              </div>
+              <div class="tamanhos">
+                <input type="radio" name="tamanho" id="tenis-42">
+                <label for="tenis-42">42</label>
+              </div>
+              <div class="tamanhos">
+                <input type="radio" name="tamanho" id="tenis-44">
+                <label for="tenis-44">44</label>
+              </div>
+            </div>
+          </div>
+          <button>Adicionar à sacola</button>
+        </div>
+
+      </div>
+
+      <!-- Jaqueta Jeans-->
+      <div class="modal__item">
+        <div class="modal__item-img">
+          <picture>
+            <source media="(max-width: 768px)" srcset="Assets/Tablet/Imagens-Cards/jaqueta.png">
+            <img src="Assets/Desktop/Imagens-Cards/Jaqueta.png" alt="imagem camiseta">
+          </picture>
+        </div>
+        <div class="modal__item-info">
+          <div class="modal__item-txt">
+            <h2>Jaqueta Jeans</h2>
+            <p>Modelo unissex oversized com gola de camurça. Atemporal e autêntica!</p>
+            <span class="modal__item-valor">R$ 150,00</span>
+            <span class="modal__item-loja">Vendido e entregue por Riachuelo</span>
+          </div>
+          
+          <div class="modal__item-cores">
+            <h2>Cores:</h2>
+            <div class="cores-box">
+              <div class="cores">
+                <input type="radio" name="cores" id="jaqueta-azul">
+                <label for="jaqueta-azul">Azul claro</label>
+              </div>
+              <div class="cores">
+                <input type="radio" name="cores" id="jaqueta-branco">
+                <label for="jaqueta-branco">Ofwhite</label>
+              </div>
+              <div class="cores">
+                <input type="radio" name="cores" id="jaqueta-preto">
+                <label for="jaqueta-preto">Preto</label>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="modal__item-tamanho">
+            <h2>Tamanho:</h2>
+            <div class="tamanhos-box">
+              <div class="tamanhos">
+                <input type="radio" name="tamanho" id="jaqueta-p">
+                <label for="jaqueta-p">P</label>
+              </div>
+              <div class="tamanhos">
+                <input type="radio" name="tamanho" id="jaqueta-pp">
+                <label for="jaqueta-pp">PP</label>
+              </div>
+              <div class="tamanhos">
+                <input type="radio" name="tamanho" id="jaqueta-m">
+                <label for="jaqueta-m">M</label>
+              </div>
+              <div class="tamanhos">
+                <input type="radio" name="tamanho" id="jaqueta-g">
+                <label for="jaqueta-g">G</label>
+              </div>
+              <div class="tamanhos">
+                <input type="radio" name="tamanho" id="jaqueta-gg">
+                <label for="jaqueta-gg">GG</label>
+              </div>
+            </div>
+          </div>
+          <button>Adicionar à sacola</button>
+        </div>
+
+      </div>
+
+      <!-- Óculos Redondo -->
+      <div class="modal__item">
+        <div class="modal__item-img">
+          <picture>
+            <source media="(max-width: 768px)" srcset="Assets/Tablet/Imagens-Cards/óculos.png">
+            <img src="Assets/Desktop/Imagens-Cards/óculos.png" alt="imagem camiseta">
+          </picture>
+        </div>
+        <div class="modal__item-info">
+          <div class="modal__item-txt">
+            <h2>Óculos Redondo</h2>
+            <p>Armação metálica em grafite com lentes arredondadas. Sem erro!</p>
+            <span class="modal__item-valor">R$ 120,00</span>
+            <span class="modal__item-loja">Vendido e entregue por Riachuelo</span>
+          </div>
+          
+          <div class="modal__item-cores">
+            <h2>Cores:</h2>
+            <div class="cores-box">
+              <div class="cores">
+                <input type="radio" name="cores" id="oculos-azul">
+                <label for="oculos-azul">Azul claro</label>
+              </div>
+              <div class="cores">
+                <input type="radio" name="cores" id="oculos-branco">
+                <label for="oculos-branco">Ofwhite</label>
+              </div>
+              <div class="cores">
+                <input type="radio" name="cores" id="oculos-preto">
+                <label for="oculos-preto">Preto</label>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="modal__item-tamanho">
+            <h2>Tamanho:</h2>
+            <div class="tamanhos-box">
+              <div class="tamanhos">
+                <input type="radio" name="tamanho" id="oculos-p">
+                <label for="oculos-p">P</label>
+              </div>
+              <div class="tamanhos">
+                <input type="radio" name="tamanho" id="oculos-pp">
+                <label for="oculos-pp">PP</label>
+              </div>
+              <div class="tamanhos">
+                <input type="radio" name="tamanho" id="oculos-m">
+                <label for="oculos-m">M</label>
+              </div>
+              <div class="tamanhos">
+                <input type="radio" name="tamanho" id="oculos-g">
+                <label for="oculos-g">G</label>
+              </div>
+              <div class="tamanhos">
+                <input type="radio" name="tamanho" id="oculos-gg">
+                <label for="oculos-gg">GG</label>
+              </div>
+            </div>
+          </div>
+          <button>Adicionar à sacola</button>
+        </div>
+
+      </div>
+
+      <!-- Bolsa coringa -->
+      <div class="modal__item">
+        <div class="modal__item-img">
+          <picture>
+            <source media="(max-width: 768px)" srcset="Assets/Tablet/Imagens-Cards/bolsa.png">
+            <img src="Assets/Desktop/Imagens-Cards/Bolsa.png" alt="imagem camiseta">
+          </picture>
+        </div>
+        <div class="modal__item-info">
+          <div class="modal__item-txt">
+            <h2>Bolsa coringa</h2>
+            <p>Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!</p>
+            <span class="modal__item-valor">R$ 120,00</span>
+            <span class="modal__item-loja">Vendido e entregue por Riachuelo</span>
+          </div>
+          
+          <div class="modal__item-cores">
+            <h2>Cores:</h2>
+            <div class="cores-box">
+              <div class="cores">
+                <input type="radio" name="cores" id="bolsa-azul">
+                <label for="bolsa-azul">Azul claro</label>
+              </div>
+              <div class="cores">
+                <input type="radio" name="cores" id="bolsa-branco">
+                <label for="bolsa-branco">Ofwhite</label>
+              </div>
+              <div class="cores">
+                <input type="radio" name="cores" id="bolsa-preto">
+                <label for="bolsa-preto">Preto</label>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="modal__item-tamanho">
+            <h2>Tamanho:</h2>
+            <div class="tamanhos-box">
+              <div class="tamanhos">
+                <input type="radio" name="tamanho" id="bolsa-p">
+                <label for="bolsa-p">P</label>
+              </div>
+              <div class="tamanhos">
+                <input type="radio" name="tamanho" id="bolsa-pp">
+                <label for="bolsa-pp">PP</label>
+              </div>
+              <div class="tamanhos">
+                <input type="radio" name="tamanho" id="bolsa-m">
+                <label for="bolsa-m">M</label>
+              </div>
+              <div class="tamanhos">
+                <input type="radio" name="tamanho" id="bolsa-g">
+                <label for="bolsa-g">G</label>
+              </div>
+              <div class="tamanhos">
+                <input type="radio" name="tamanho" id="bolsa-gg">
+                <label for="bolsa-gg">GG</label>
+              </div>
+            </div>
+          </div>
+          <button>Adicionar à sacola</button>
+        </div>
+
+      </div>
+
+    </dialog>
+
+    <dialog id="modal-news-letter">
+      <div class="modal__cabecalho">        
+        <div class="modal__cabecalho-box" aria-label="Fechar modal">
+          <img src="Assets/Vector.png" alt="" width="32px" height="32px">
+          <h1>E-mail cadastrado com sucesso!</h1>
+        </div>
+        <span class="fechar-modal-btn close-news">
+          <img src="Assets/fechar-modal.png"  alt="botão fechar modal">
+        </span>
+      </div>
+
+      <section class="modal_news">
+        <p>Em breve você receberá novidades exclusivas da Meteora.</p>
+      </section>
+
+    </dialog>
+
+    <script type="module" src="JS/script.js" ></script>
+    <script type="module" src="JS/api-produtos/mainApi.js"></script>    
+    <script type="module" src="./JS/api-produtos/exibirProdutos.js"></script>
+    <script type="module" src="./JS/api-produtos/filtrarCategorias.js"></script>
+    <script type="module" src="JS/api-produtos/pesquisarProdutos.js"></script>
+    <script type="module" src="JS/modules/news-letter.js"></script>
+</body>
+</html>

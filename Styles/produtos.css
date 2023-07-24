@@ -1,0 +1,223 @@
+.produtos h2 {
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 30px;
+    font-size: 32px; 
+    font-weight: 500;
+}
+
+.container-produtos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px; 
+    color: var(--preto-cards);
+}
+
+.cards-produtos {
+    width: 350px;
+    height: 615px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;  
+    border: 1px solid #00000013;    
+    padding-left: 16px; 
+}
+
+.cards-produtos h3 {
+    font-weight: 700;
+    margin: 13px 0; 
+}
+
+.cards-produtos p {
+    font-size: 13px;
+    margin-bottom: 16px; 
+}
+
+.cards-produtos span {
+    margin-bottom: 10px;
+    font-weight: 700; 
+}
+
+.cards-produtos button {
+    width: 102px;
+    height: 37px;
+    border: none;
+    text-align: center;
+    font-weight: 500;
+    padding: 9px 16px;
+    color: var(--branco);
+    background-color: var(--roxo-botao);
+    margin-bottom: 16px;
+}
+
+.produto-card1 {
+    background-image: url(../Assets/Desktop/Imagens-Cards/Camiseta.png);
+    background-repeat: no-repeat;    
+}
+.produto-card2 {
+    background-image: url(../Assets/Desktop/Imagens-Cards/Calça.png);
+    background-repeat: no-repeat;
+}
+.produto-card3 {
+    background-image: url(../Assets/Desktop/Imagens-Cards/Tenis.png);
+    background-repeat: no-repeat;
+}
+.produto-card4 {
+    background-image: url(../Assets/Desktop/Imagens-Cards/Jaqueta.png);
+    background-repeat: no-repeat;
+}
+.produto-card5 {
+    background-image: url(../Assets/Desktop/Imagens-Cards/óculos.png);
+    background-repeat: no-repeat;
+}
+.produto-card6 {
+    background-image: url(../Assets/Desktop/Imagens-Cards/Bolsa.png);
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+    .produtos h2 {
+        margin-top: 45px;
+        margin-bottom: 30px;
+        font-size: 28px; 
+    }
+    
+    .container-produtos {
+        column-gap: 30px;
+        row-gap: 32px;
+    } 
+    
+    .cards-produtos {
+        width: 330px;
+        height: 602px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;  
+        border: 1px solid #00000013;    
+        padding-left: 16px; 
+    }
+    
+    .cards-produtos h3 {
+        font-weight: 700;
+        margin: 13px 0; 
+    }
+    
+    .cards-produtos p {
+        font-size: 13px;
+        margin-bottom: 16px; 
+    }
+    
+    .cards-produtos span {
+        margin-bottom: 10px;
+        font-weight: 700; 
+    }
+    
+    .cards-produtos button {
+        width: 102px;
+        height: 37px;
+        border: none;
+        text-align: center;
+        font-weight: 500;
+        padding: 9px 16px;
+        color: var(--branco);
+        background-color: var(--roxo-botao);
+        margin-bottom: 16px;
+    }
+
+    .produto-card1 {
+        background-image: url(../Assets/Tablet/Imagens-Cards/camiseta.png);
+        background-repeat: no-repeat;
+    }
+    .produto-card2 {
+        background-image: url(../Assets/Tablet/Imagens-Cards/calça.png);
+        background-repeat: no-repeat;
+    }
+    .produto-card3 {
+        background-image: url(../Assets/Tablet/Imagens-Cards/tenis.png);
+        background-repeat: no-repeat;
+    }
+    .produto-card4 {
+        background-image: url(../Assets/Tablet/Imagens-Cards/jaqueta.png);
+        background-repeat: no-repeat;
+    }
+    .produto-card5 {
+        background-image: url(../Assets/Tablet/Imagens-Cards/óculos.png);
+        background-repeat: no-repeat;
+    }
+    .produto-card6 {
+        background-image: url(../Assets/Tablet/Imagens-Cards/bolsa.png);
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 375px) {
+    .produtos h2 {
+        margin-top: 50px;
+        font-size: 28px; 
+    }
+    
+    .container-produtos {
+        column-gap: 0px;
+        row-gap: 32px;
+    } 
+    
+    .cards-produtos {
+        width: 323px;
+        height: 582px;
+    }
+    
+    .cards-produtos h3 {
+        font-weight: 700;
+        margin: 13px 0;
+    }
+    
+    .cards-produtos p {
+        font-size: 13px;
+        margin-bottom: 16px;
+    }
+    
+    .cards-produtos span {
+        margin-bottom: 10px;
+        font-weight: 700; 
+    }
+    
+    .cards-produtos button {
+        width: 102px;
+        height: 37px;
+        border: none;
+        text-align: center;
+        font-weight: 500;
+        padding: 9px 16px;
+        color: var(--branco);
+        background-color: var(--roxo-botao);
+        margin-bottom: 16px;
+    }
+
+    .produto-card1 {
+        background-image: url(../Assets/Mobile/Imagens-cards/camiseta.png);
+        
+
+    } 
+    .produto-card2{
+        background-image: url(../Assets/Mobile/Imagens-cards/calça.png);
+        
+        
+    }
+    .produto-card3 {
+        background-image: url(../Assets/Mobile/Imagens-cards/tenis.png);
+       
+    }
+    .produto-card4 {
+        background-image: url(../Assets/Mobile/Imagens-cards/jaqueta.png);
+       
+    }
+    .produto-card5 {
+        background-image: url(../Assets/Mobile/Imagens-cards/óculos.png);
+        
+    }
+    .produto-card6 {
+        background-image: url(../Assets/Mobile/Imagens-cards/bolsa.png);
+        
+    }
+}

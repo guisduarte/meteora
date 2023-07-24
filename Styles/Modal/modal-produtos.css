@@ -1,0 +1,227 @@
+#modal-produtos {
+    width: 700px;
+    height: 587px;
+    position: fixed;
+    top: 90%; 
+    z-index: 9999;
+    border: none;
+    animation: slideModal .3s forwards;
+}
+
+#modal-produtos::backdrop {
+    background: rgba(0, 0, 0, .7);
+}
+
+.modal__item {
+    width: 668px;
+    height: 474px;
+    position: fixed;
+    top: 81px;
+}
+
+.modal__item-img {
+    width: 350px;
+    height: 474px;
+    position: fixed;
+}
+
+.modal__item-info {
+    width: 318px;
+    height: 474px;
+    position: fixed;
+    left: 366px;
+    padding-left: 16px;
+}
+.modal__item-txt {
+    width: 286px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;    
+}
+
+.modal__item-txt h2 {
+    font-weight: 700;
+}
+
+.modal__item-txt p {
+    font-size: 13px;
+    line-height: 23px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #ADB5BD;
+}
+
+.modal__item-valor {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.modal__item-loja {
+    font-size: 13px;
+    line-height: 20px;
+    color: #ADB5BD;
+
+}
+
+.modal__item-cores {
+    width: 286px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+    border-top: 1px solid #ADB5BD;
+
+}
+
+.modal__item-cores h2 {
+    margin-top: 16px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.cores-box {
+    display: flex;
+    width: 210px;
+    height: 41px;
+    gap: 16px;
+    font-size: 13px;
+}
+
+.cores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;    
+}
+
+.modal__item-tamanho {
+    width: 286px;
+    display: flex;  
+    flex-direction: column;  
+    gap: 16px;
+    margin-top: 16px;
+    border-top: 1px solid #ADB5BD;
+}
+
+.modal__item-tamanho h2 {
+    margin-top: 16px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.tamanhos-box {
+    width: 200px;
+
+    display: flex;
+    gap: 16px;
+    font-size: 13px;
+
+}
+
+.tamanhos {
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal__item-info button {
+    width: 180px;
+    font-weight: 500;
+    padding: 9px 16px;
+    border: none;
+    margin-top: 16px;
+    background-color: var(--roxo-botao);
+    color: var(--branco);
+    
+}
+
+/* Tela para Tablet */
+@media (max-width: 768px) {
+    .modal__item {
+        height: 430px;
+        top: 66px;
+    }
+    .modal__item-img {
+        width: 330px; 
+        height: 430px;
+    }
+    .modal__item-img img {
+        margin-top: 15px;
+    }
+
+    .modal__item-info {
+        width: 318px;
+        height: 430px;
+        left: 346px;
+    }
+
+    .modal__item-txt {
+        gap: 15px;
+    }
+
+    .modal__item-txt h2 {
+        margin-top: 15px;
+    }
+    .modal__item-txt p {
+        padding-bottom: 15px;
+        line-height: normal;
+    }
+
+    .modal__item-cores {
+        margin-top: 10px;
+    }
+
+    .modal__item-tamanho {
+        margin-top: 0;
+    }
+
+}
+
+/* Tela Mobile */
+
+@media (max-width: 375px) {
+    #modal-produtos {
+        width: 343px;
+        height: 1033px;
+    }
+
+    .modal__item {        
+        width: 311px;
+        height: 920px;
+    }
+
+    .modal__item-img {
+        width: 311px;  
+        height: 422px; 
+    }
+    .modal__item-img img {
+        width: 311px;
+        height: 422px;
+    }
+
+    .modal__item-info {
+        width: 311px;
+        height: 474px;
+        top: 503px;
+        left: 16px;
+        border: 1px solid rgba(0, 0, 0, 13%);
+    }
+
+    .modal__item-txt {
+        gap: 24px;         
+    }
+
+    .modal__item-txt p {
+        padding-bottom: 24px;
+    }
+
+    .modal__item-cores {
+        margin-top: 16px;
+    }
+
+    .modal__item-tamanho {
+        margin-top: 16px;
+    }
+
+}

@@ -1,0 +1,128 @@
+[data-menu="button"] {
+    display: none;
+}
+
+@media (max-width: 375px) {
+    /* Botão Menu */  
+    .js [data-menu="button"] {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background: transparent;
+        border: none;
+        z-index: 300;
+        margin-right: 21px;
+    }    
+
+    /* Linhas do Botão */
+    .js .linha {
+        display: block;
+        width: 18px;
+        height: 2px;
+        background-color: var(--verde-meteora);;
+        margin: 3px auto;
+        position: relative;
+        transform-origin: center;
+        transition: 0.3s;
+    }
+
+    /* Botão fechar */
+    .js [data-menu="button"].active .linha:nth-child(1) {
+        transform: translateY(5px) rotate(-45deg); 
+                    
+    }
+    .js [data-menu="button"].active .linha:nth-child(3) {
+        transform: translateY(-5px) rotate(45deg);                     
+    }
+    .js [data-menu="button"].active .linha:nth-child(2) {
+        opacity: 0;
+    }
+
+    /* Menu Mobile */
+    .js [data-menu="list"] {
+        display: none; 
+        position: absolute;
+        background: var(--fundo-menu);  
+        width: 144px; 
+        height: 197px;       
+        top:0;        
+        left: 219px;
+        z-index: 200;
+        padding: 42px 24px;
+        cursor: auto;
+        font-size: 16px;
+        font-weight: 400;    
+    }
+
+    .js .lista-links {
+        border-bottom: 1px solid var(--branco);
+        padding: 8px 0;
+        width: 100px;
+    }
+
+    .js .lista-links:first-child a{
+        color: var(--verde-meteora);
+        font-weight: 700;
+        
+    }
+
+    /* Menu Mobile com classe active */
+    .js [data-menu="list"].active {
+        display: block;
+        animation: slideDownMenu .3s forwards;
+    }
+
+    /* Container links */
+    .js .container-links{
+        gap: 0;
+        margin: 0;
+    }
+
+    .js .logo {
+        margin-left: 22px;
+    }
+
+    /* Container logo e menu mobile */
+    .js .container-logo-menu {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* Container buscar */
+    .js [data-menu="container-buscar"] {     
+        position: absolute;
+        width: 100vw;
+        height: 86px;       
+        top:58px;
+        gap: 8.2px;
+    }
+
+    /* Input texto buscar */
+    .js [data-menu="buscar-texto"] {
+        width: 225.6px;
+        height: 38px;
+        margin-top: 24px;
+        margin-left: 27px;
+        border: 1px solid var(--preto);
+    }
+
+    .js .buscar-texto::placeholder {
+        padding-left: 12px;
+
+    }
+
+    /* Botão buscar */
+    .js [data-menu="buscar-btn"] {
+        width: 88.42px; 
+        height: 37px;
+        margin-top: 24px;
+        padding: 9px 12px;
+        border: 1px solid var(--preto);
+        color: var(--preto);        
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+}

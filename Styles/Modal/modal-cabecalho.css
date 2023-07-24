@@ -1,0 +1,48 @@
+/* Cabeçalho Modais */
+.modal__cabecalho {
+    width: 700px;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--preto);
+    color: var(--branco);
+    
+}
+.modal__cabecalho-box {
+    display: flex;
+    align-items: center;
+}
+
+.modal__cabecalho-box img {
+    margin-left: 16px;
+    margin-right: 20px;
+}
+
+.fechar-modal-btn {
+    margin-right: 28px;
+    cursor: pointer;
+}
+
+/* Tela Mobile */
+
+@media (max-width: 375px) {
+    .modal__cabecalho {
+        width: 337px;        
+    }
+
+    .modal__cabecalho-box h1 {
+        width: 211px;
+        height: 48px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24.2px;
+    }
+
+    .fechar-modal-btn {
+        margin-right: 24.5px;
+    }
+}

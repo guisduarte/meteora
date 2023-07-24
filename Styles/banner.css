@@ -1,0 +1,97 @@
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 0;
+    height: 0;
+}
+
+.carousel-caption {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: var(--branco);
+    text-align: left;
+    font-family: var(--fonte-inter);
+}
+
+.carousel-caption h1 {
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.carousel-caption p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+.caption-img2  {
+    text-align: right;
+    margin-bottom: 162px;
+    margin-right: 165px;
+}
+
+.caption-img3 {
+    margin-bottom: 163px;
+    margin-left: 166px;
+}
+
+/* Tela para Tablet */
+
+@media (max-width: 768px) {
+    .carousel-caption h1 {
+        font-size: 32px;
+    }
+
+    .carousel-caption p{
+        font-size: 16px;
+        margin-top: 16px;
+    }
+
+    .caption-img2  {
+        text-align: right;
+        margin-bottom: 169px;
+        margin-right: 99px;
+    }
+    
+    .caption-img3 {
+        margin-bottom: 169px;
+        margin-left: 99px;
+    }
+}
+
+/* Tela Mobile */
+
+@media (max-width: 375px) {
+    .banner{
+        margin-top: 86px;
+    }
+    .carousel-caption  {
+        margin-left: 27px;
+    }
+
+    .carousel-caption h1 {
+        text-align: center;
+    }
+
+    .carousel-caption p{
+        font-size: 16px;
+        margin-top: 8px;
+        text-align: center;
+    }
+
+    .caption-img2 {
+        margin-bottom: 74px;
+        margin-right: 0;
+    }
+    
+    .caption-img3 {
+        width: 322px;        
+        margin-bottom: 51px;
+        
+    }
+    
+    .caption-img3 p {
+        line-height: 23px;        
+    }
+}

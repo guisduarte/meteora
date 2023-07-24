@@ -1,0 +1,50 @@
+/* Base Modal NewsLetter */
+#modal-news-letter {
+    width: 700px;
+    height: 136px;
+    position: fixed;
+    top: 23%; 
+    left: 0;
+    z-index: 9999;
+    border: none;
+    animation: slideModal .3s forwards;    
+}
+
+#modal-news-letter::backdrop {
+    background: rgba(0, 0, 0, .7);
+}
+
+/* Seção modal newsletter */
+.modal_news {
+    width: 700px;
+    height: 71px;
+    position: absolute;
+    top: 65px;
+    left: 0;
+}
+
+.modal_news p {
+    margin: 16px 16px 32px 16px;    
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Tela Mobile */
+@media (max-width: 375px) {
+    #modal-news-letter {
+        width: 337px;
+        height: 159px;
+    }
+
+    .modal_news {
+        width: 337px;
+        height: 94px;
+    }
+
+    .modal_news p {
+        width: 311px;
+        height: 46px;
+        line-height: 23px;
+    }
+
+}

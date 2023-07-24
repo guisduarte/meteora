@@ -1,0 +1,29 @@
+@import url(./Styles/base.css);
+@import url(./Styles/cabecalho.css);
+@import url(./Styles/menu-mobile.css);
+@import url(./Styles/banner.css);
+@import url(./Styles/categoria.css);
+@import url(./Styles/produtos.css);
+@import url(./Styles/facilidades.css);
+@import url(./Styles/news-letter.css);
+@import url(./Styles/rodape.css);
+@import url(./Styles/Modal/modal-cabecalho.css);
+@import url(./Styles/Modal/modal-produtos.css);
+@import url(./Styles/Modal/modal-news-letter.css);
+
+/* Variáveis */
+
+:root {
+    /* Cores */
+    --preto: #000000;
+    --branco: #FFFFFF;
+    --verde-meteora: #DAFF01;
+    --fechar-modal: #6C757D;
+    --fundo-menu: #343A40;
+    --preto-cards: #212529;
+    --roxo-botao: #9353FF;
+
+
+    /* Fontes */
+    --fonte-inter: 'Inter', sans-serif;
+}
