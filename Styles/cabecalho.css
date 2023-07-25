@@ -88,7 +88,7 @@ header {
 
 /* Tela Mobile */
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
     .logo {
         background-image: url(../Assets/Mobile/Logo-mobile.png);
         background-repeat: no-repeat;
@@ -99,5 +99,16 @@ header {
 
     .lista {
         margin-left: 12px;
+    }
+
+    .container-buscar {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 389px) {
+    .container-buscar {
+        max-width: 340px;
+        margin-right: 0px;
     }
 }

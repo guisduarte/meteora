@@ -151,7 +151,7 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
     .produtos h2 {
         margin-top: 50px;
         font-size: 28px; 

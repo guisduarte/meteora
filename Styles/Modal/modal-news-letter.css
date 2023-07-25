@@ -30,7 +30,7 @@
 }
 
 /* Tela Mobile */
-@media (max-width: 375px) {
+@media (max-width: 425px) {
     #modal-news-letter {
         width: 337px;
         height: 159px;

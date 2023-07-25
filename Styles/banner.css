@@ -61,8 +61,7 @@
 }
 
 /* Tela Mobile */
-
-@media (max-width: 375px) {
+@media (max-width: 425px) {
     .banner{
         margin-top: 86px;
     }

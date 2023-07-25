@@ -72,16 +72,14 @@
         
 }
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
     .news__letter {
         margin-bottom: 28.5px;
     }
     
     .news__letter-box {
-        width: 321px;
-        height: 179px;
-        border: 1px solid var(--preto);
-        margin: 0 auto;
+        width: 360px;
+        height: 200px;      
     }
     
     .news__letter-box h2 {
@@ -98,4 +96,22 @@
         position: absolute;
         right: 44px;
     }
+}
+
+@media (max-width: 389px) {
+    .news__letter-box {
+        width: 320px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 320px) {
+    .news__letter-box {
+        width: 300px;
+        height: 228px;
+    }
+
+    .news__letter-box input{
+        margin-right: 40px;
+    }    
 }

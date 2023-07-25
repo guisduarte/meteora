@@ -180,10 +180,10 @@
 
 /* Tela Mobile */
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
     #modal-produtos {
-        width: 343px;
-        height: 1033px;
+        width: 354px;
+        height: 1033px;        
     }
 
     .modal__item {        
@@ -193,11 +193,13 @@
 
     .modal__item-img {
         width: 311px;  
-        height: 422px; 
+        height: 422px;         
     }
+
     .modal__item-img img {
         width: 311px;
         height: 422px;
+        
     }
 
     .modal__item-info {
@@ -209,7 +211,7 @@
     }
 
     .modal__item-txt {
-        gap: 24px;         
+        gap: 24px;   
     }
 
     .modal__item-txt p {

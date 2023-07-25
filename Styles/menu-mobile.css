@@ -2,7 +2,7 @@
     display: none;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
     /* Botão Menu */  
     .js [data-menu="button"] {
         display: inline-block;
@@ -12,6 +12,8 @@
         border: none;
         z-index: 300;
         margin-right: 21px;
+        position: relative;
+        left: 50vw;
     }    
 
     /* Linhas do Botão */
@@ -45,8 +47,8 @@
         background: var(--fundo-menu);  
         width: 144px; 
         height: 197px;       
-        top:0;        
-        left: 219px;
+        top: 0;        
+        left: 64%;
         z-index: 200;
         padding: 42px 24px;
         cursor: auto;
@@ -80,14 +82,6 @@
 
     .js .logo {
         margin-left: 22px;
-    }
-
-    /* Container logo e menu mobile */
-    .js .container-logo-menu {
-        width: 100vw;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
     }
 
     /* Container buscar */
@@ -124,5 +118,46 @@
         font-weight: 500;
         font-size: 16px;
     }
+}
 
+@media (max-width: 389px) {  
+    /* Menu Mobile */
+    .js [data-menu="list"] {            
+        left: 59.8%;
+    }
+}
+
+@media (max-width: 375px) {
+    /* Botão Menu */  
+    .js [data-menu="button"] {        
+        left: 45vw;
+    }
+}
+
+@media (max-width: 320px) {
+    /* Botão Menu */  
+    .js [data-menu="button"] {            
+        left: 36vw;
+    }
+
+    /* Menu Mobile */
+    .js [data-menu="list"] {            
+        left: 51.1%;
+    }
+
+    /* Container buscar */
+    .js [data-menu="container-buscar"] {    
+        width: 300px;
+    }
+
+    /* Input texto buscar */
+    .js [data-menu="buscar-texto"] {        
+        margin-left: 5px;
+        width: 200px;
+    }
+
+    /* Botão buscar */
+    .js [data-menu="buscar-btn"] {
+        width: 80px;         
+    }
 }

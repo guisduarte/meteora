@@ -11,7 +11,7 @@ footer h2 {
     font-size: 13px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
     footer {
         height: 74px;
     }
@@ -21,5 +21,19 @@ footer h2 {
         padding: 17px 0px;
         margin: 0 64px;
         line-height: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+    footer {
+        margin: 0 auto;
+        width: 90vw;
+    }
+}
+
+@media (max-width: 320px) {
+    footer h2 {
+        width: 190px;        
+        height: 90px;
     }
 }
