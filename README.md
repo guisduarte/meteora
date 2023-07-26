@@ -2,6 +2,8 @@
 
 Este é o repositório oficial do projeto do site de comércio eletrônico da Meteora, uma empresa que busca oferecer roupas atemporais, casuais e sem gênero. O objetivo deste projeto é criar uma plataforma de e-commerce que proporcione uma experiência de compra incrível para os clientes da Meteora, além de ajudar a empresa a se consolidar como uma referência no mercado digital.
 
+![Imagem do site](Assets/meteora.JPG)
+
 ## Requisitos do Projeto
 
 O projeto tem como objetivo criar um site de e-commerce com os seguintes recursos:
@@ -30,9 +32,9 @@ O site será desenvolvido de forma responsiva, para garantir uma experiência de
 
 Durante o desenvolvimento deste projeto, utilizaremos as seguintes ferramentas:
 
-- Linguagens: HTML, CSS, JavaScript.
-- Sistema Ágil: Utilizaremos o sistema ágil de desenvolvimento para melhorar a eficiência e adaptar-nos às mudanças ao longo do projeto.
-- Trello: O Trello será usado para gerenciar as tarefas. O quadro estará organizado da seguinte forma:
+- **Linguagens:** HTML, CSS, JavaScript.
+- **Sistema Ágil:** Utilizaremos o sistema ágil de desenvolvimento para melhorar a eficiência e adaptar-nos às mudanças ao longo do projeto.
+- **Trello:** O Trello será usado para gerenciar as tarefas. O quadro estará organizado da seguinte forma:
 - **Pronto para Iniciar**: Cartões com os elementos que ainda não foram desenvolvidos.
 - **Desenvolvendo**: Cartões com os elementos em desenvolvimento no momento.
 - **Pausado**: Cartões para tarefas que foram iniciadas, mas pausadas temporariamente.
